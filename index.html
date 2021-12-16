@@ -4,25 +4,24 @@
 	<meta charset="utf-8">
 	<title>Marie Kathriner Web Development</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/ac85f5b47a.js" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
 </head>
 <body>
 <!-- About -->
 <div class="wrapper-about">
-	<h1>
-		Marie Kathriner
-	</h1>
-	<p class="subheader">online presence services</p>
-	<h3>About</h3>
-	<p class="about">I'm a queer, SW friendly mostly self-taught web developer.<br>
-		As an online Sex Worker myself I know that we often struggle to find people who are willing to work for and with us and respect us just as any other client.<br>
-		So I started this business to develop link pages, portfolios, landing pages and simple websites for SWers.
+	<div class="wrapper-intro">
+		<h1 id="introType"></h1>
+		<span class="blink">|</span>
+	</div>
+	<!--<p class="subheader">online presence services</p>-->
+	<h3 id="about" >About</h3>
+	<p class="about">I'm a queer, SW friendly mostly self-taught web developer.<br>As an online Sex Worker myself I know that we often struggle to find people who are willing to work for and with us and respect us just as any other client.<br>So I started this business to develop link pages, portfolios, landing pages and simple websites for SWers and anyone else.
 	</p>
-	<a class="button-email">E-mail</a>
-</div>
+	<a class="button-email" href="mailto:mariekathriner.dev@gmail.com">Say Hi<i class="envelope fas fa-envelope-open-text"></i></a></div>
 <!-- Services -->
 <div class="wrapper-services">
-	<h3>My Services</h3>
+	<h3 id="services">My Services</h3>
 	<ul>
 		<li>Simple link pages</li>
 			<li class="subli">A list of all your social media, payment and platform links. I can customize it completely for your wishes and needs - no limited templates or adds!</li>
@@ -33,12 +32,12 @@
 		<li>Web design</li>
 			<li class="subli">I also design your website myself - if you already have a sketch or an old website you just want to transfer I can also work with that! Or the other way around - you can code yourself but need someone to visualise your thoughts . I work with Adobe XD and can share pixel true projects with my clients.</li>
 	</ul>
-	<p class="p-blue">I am mostly self-taught and I use the programming languages HTML, CSS, JavaScript and some PHP.</p>
-	<a class="button-reviews">reviews</a>
+	<p class="blue-p">I am mostly self-taught and I use the programming languages HTML, CSS, JavaScript and some PHP.</p>
+	<a href="https://t.me/WebDevbyMarie" class="button-reviews">reviews<i class="plane fab fa-telegram-plane"></i></a>
 </div>
 <!--FAQ-->
 <div class="wrapper-faq">
-<h3>FAQ</h3>
+<h3 id="faq">FAQ</h3>
 	<ul>
 		<li>E-Commerce</li>
 			<li class="subli">I do NOT provide E-Commerce services so your fans can't pay you on your website they need to use a extern payment method!</li>
@@ -54,21 +53,23 @@
 		<li class="subli">3. Next we figure out the general Mood board, color palette and the Content you want to put on the page(Text, pictures and links)</li>
 		<li class="subli">4. I will show you my web design I made and if you like it I start coding. I will update you ASAP and give you a preview link so you can always see what in Realtime every time I commit a change even before we launched your website.</li>
 	</ul>
-	<p class="p-blue">Ready to order? Contact me via E-mail or Telegram!</p>
+	<p class="blue-p">Ready to order? Contact me via E-mail or Telegram!</p>
 </div>
 <!--Navigation element -->
 	<div class="nav-wrapper">
-			<a class="nav-li">FAQ</a>
-			<a class="nav-li">My Services</a>
-			<a class="nav-li">telegram channel</a>
-		<a class="icon"><i class="fab fa-telegram"></i></a>
-		<a class="icon"><img src="icon-mail.png"></a>
-		<a class="icon"><img src="icon-twitter.png"></a>
+			<a href="#services" class="nav-li">My Services</a>
+			<a href="#faq" class="nav-li">faq and payment</a>
+			<a href="https://t.me/WebDevbyMarie" class="nav-li">telegram channel</a>
+		<div class="icons-wrapper">
+			<a href="https://t.me/WebDevbyMarie" class="icon"><i class="fab fa-telegram-plane"></i></a>
+			<a href="mailto:mariekathriner.dev@gmail.com" class="icon"><i class="fas fa-envelope"></i></a>
+			<a href="https://twitter.com/mariekathriner" class="icon"><i class="fab fa-twitter"></i></a>
+		</div>	
 	</div>
 <!--Footer -->
 <footer>
-<p class="copyright">Website made by Marie Kathriner
-	© 2021</p>
+<p class="copyright">Website designed and built by Laura Marie Breiteneder.<br>
+	All rights reserved. &copy;</p>
 </footer>
 </body>
 </html>

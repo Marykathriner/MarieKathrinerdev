@@ -1,11 +1,16 @@
 /* margin: 10px 20px 30px 40px; top,right,bottom,left */
 @import url("https://use.typekit.net/inf7hwm.css");
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0 auto;
     padding: 0;
     background-color: #577E89;
     font-family: century-gothic, sans-serif;
+    cursor: default;
 }
+
 
 h1{
     font-size: 65px;
@@ -27,6 +32,47 @@ h4{
     color: #D5DFE2;
 }
 
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    font-size: 63px;
+    color: #212f33;
+  }
+.blink::after, .blink::before{
+    box-sizing: border-box;
+}
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  .wrapper-intro{
+    display: flex;
+  }
+
+.wrapper-about{
+    padding: 70px 215px 0px 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-services{
+    padding: 0px 215px 0px 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-faq{
+    padding: 0px 215px 0px 140px;
+    display: flex;
+    flex-direction: column;
+}
 .subheader{
     font-style: italic;
     font-size: 30px;
@@ -51,19 +97,33 @@ h4{
     font-size: 20px;
     color: white;
     margin: 25px 0 0 0;
+    transition: 0.8s;
+}
+
+.about:hover{
+    font-size: 22px;
+    margin: 20px -40px 0 -40px;
 }
 
 .button-email{
     border-radius: 57px;
     padding: 23px 63px;
     text-transform: uppercase;
-    margin: 60px 0 0 0;
+    margin: 50px 0 0 0;
     display: inline-flex;
     background-color: #E2D8A7;
     font-weight: 800;
     font-size: 25px;
     color: black;
     letter-spacing: 2px;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -5px rgb(0 0 0 / 34%);
+    transition: 0.5s;
+    width: fit-content;
+}
+
+.button-email:hover{
+    box-shadow: 12px 13px 15px -5px rgb(0 0 0 / 34%);
 
 }
 
@@ -78,6 +138,21 @@ h4{
     font-size: 25px;
     color: black;
     letter-spacing: 2px;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -5px rgb(0 0 0 / 34%);
+    transition: 0.5s;
+    width: fit-content;
+}
+.button-reviews:hover{
+    box-shadow: 12px 13px 15px -5px rgb(0 0 0 / 34%);
+
+}
+
+.blue-p{
+    font-style: italic;
+    letter-spacing: 2px;
+    margin: 25px 0 0 0;
+    font-size: 20px;
 }
 
 .subli {
@@ -92,18 +167,14 @@ li {
     font-weight: 800;
     padding: 25px 0 0 0;
     font-size: 18px;
+    max-width: max-content;
 }
 
 ul{
-    padding: 0px;
+    padding: 15px 0px 0;
 }
 
-.p-blue{
-    font-style: italic;
-    letter-spacing: 2px;
-    margin: 25px 0 0 0;
-    font-size: 20px;
-}
+
 
 .nav-wrapper {
     display: flex;
@@ -121,10 +192,16 @@ ul{
     padding: 5px 0 0 0;
     cursor: pointer;
     text-transform: lowercase;
+    letter-spacing: 1.5px;
+    transition: 0.5s;
+    color: #212f33;
+    text-decoration: none;
 }
 
 .nav-li:hover{
     color: #D5DFE2;
+    font-size: 13.5px;
+
 }
 
 footer{
@@ -134,8 +211,70 @@ footer{
     color: white;
 }
 
-.fab fa-telegram{
-    font-size: 20px;
+/*Tele, twitter*/
+.fab, .far {
+    font-weight: 400;
+    color: #212F33;
+    font-size: 22px;
+    transition: 0.5s;
+}
+/*mail*/
+.fa, .fas {
+    font-weight: 900;
+    color: #212F33;
+    font-size: 22px;
+    transition: 0.5s;
+
 }
 
+.fa:hover, .fas:hover{
+    color: #D5DFE2;
+    font-size: 24px;
+    margin: -1.2px;
 
+}
+
+.fab:hover, .far:hover{
+    color: #D5DFE2;
+    font-size: 24px;
+    margin: -1.2px;
+}
+
+.icons-wrapper {
+    margin: 20px 0 0;
+
+}
+
+.icon {
+    margin: 0 0px 0 12px;
+
+}
+
+.iocon:hover{
+    color: #D5DFE2;
+    font-size: 31px;
+}
+
+.envelope{
+    color: black;
+    margin-left: 12px;
+    font-size: 30px;
+}
+
+.envelope:hover{
+    font-size: 30px;
+    color: black;
+    margin: 0 0px 0 12px;
+}
+
+.plane{
+    color: black;
+    margin-left: 9px;
+    font-size: 30px;
+}
+
+.plane:hover{
+    font-size: 30px;
+    color: black;
+    margin: 0 0px 0 9px;
+}
