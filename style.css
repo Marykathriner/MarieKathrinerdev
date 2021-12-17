@@ -278,3 +278,19 @@ footer{
     color: black;
     margin: 0 0px 0 9px;
 }
+
+@media all and ( max-width: 600px) {
+    
+    h3{
+        font-size: 50px;
+    }
+
+    .about{
+        font-size: 40px;
+    }
+
+    li{
+        font-size: 30px;
+    }
+
+}
