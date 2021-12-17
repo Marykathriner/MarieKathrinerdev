@@ -1,5 +1,58 @@
 /* margin: 10px 20px 30px 40px; top,right,bottom,left */
 @import url("https://use.typekit.net/inf7hwm.css");
+@media only screen and ( max-width: 600px) {
+   
+    body{
+        background-color: blue;
+    }
+
+    h3{
+        font-size: 50px;
+    }
+
+    .about{
+        font-size: 40px;
+    }
+
+    li{
+        font-size: 33px;
+    }
+
+    .button-email{
+        font-size: 40px;
+    }
+
+    .envelope{
+        font-size: 40px;
+    }
+
+    .button-reviews{
+        font-size: 40px;
+    }
+
+    .plane{
+        font-size: 40px;
+    }
+
+    .nav-li{
+        display: none;
+    }
+
+    .icons-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon{
+        margin: 0px 0px 20px 0px;
+    }
+
+    .fas, .fab{
+        font-size: 35px;
+    }
+
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -280,51 +333,3 @@ footer{
     margin: 0 0px 0 9px;
 }
 
-@media screen and ( max-width: 600px) {
-   
-    h3{
-        font-size: 50px;
-    }
-
-    .about{
-        font-size: 40px;
-    }
-
-    li{
-        font-size: 33px;
-    }
-
-    .button-email{
-        font-size: 40px;
-    }
-
-    .envelope{
-        font-size: 40px;
-    }
-
-    .button-reviews{
-        font-size: 40px;
-    }
-
-    .plane{
-        font-size: 40px;
-    }
-
-    .nav-li{
-        display: none;
-    }
-
-    .icons-wrapper{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .icon{
-        margin: 0px 0px 20px 0px;
-    }
-
-    .fas, .fab{
-        font-size: 35px;
-    }
-
-}
