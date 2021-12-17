@@ -54,6 +54,7 @@ h4{
 
   .wrapper-intro{
     display: flex;
+
   }
 
 .wrapper-about{
@@ -279,8 +280,8 @@ footer{
     margin: 0 0px 0 9px;
 }
 
-@media all and ( max-width: 600px) {
-    
+@media screen and ( max-width: 600px) {
+   
     h3{
         font-size: 50px;
     }
@@ -290,7 +291,40 @@ footer{
     }
 
     li{
-        font-size: 30px;
+        font-size: 33px;
+    }
+
+    .button-email{
+        font-size: 40px;
+    }
+
+    .envelope{
+        font-size: 40px;
+    }
+
+    .button-reviews{
+        font-size: 40px;
+    }
+
+    .plane{
+        font-size: 40px;
+    }
+
+    .nav-li{
+        display: none;
+    }
+
+    .icons-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon{
+        margin: 0px 0px 20px 0px;
+    }
+
+    .fas, .fab{
+        font-size: 35px;
     }
 
 }
