@@ -283,19 +283,19 @@ footer{
 @media only screen and ( max-width: 600px) {
    
    .wrapper-about, .wrapper-faq, .wrapper-services{
-    padding: 50px 85px 0 60px;
+    padding: 40px 85px 0 45px;
     }
    
     .wrapper-intro{
-        margin: 0 -20px;
+        margin: 0 -40px 0 -20px;
     }
 
    h1{
-       font-size: 34px;
-   }
+       font-size: 32px;
+    }
 
    .blink{
-       font-size: 30px;
+       font-size: 32px;
    }
 
    .blink::after{
@@ -331,19 +331,19 @@ footer{
     }
 
     .button-email{
-        font-size: 30px;
+        font-size: 22px;
     }
 
     .envelope{
-        font-size: 30px;
+        font-size: 22px;
     }
 
     .button-reviews{
-        font-size: 30px;
+        font-size: 22px;
     }
 
     .plane{
-        font-size: 30px;
+        font-size: 22px;
     }
 
     .nav-li{
