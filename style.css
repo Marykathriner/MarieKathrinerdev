@@ -282,36 +282,68 @@ footer{
 
 @media only screen and ( max-width: 600px) {
    
-    body{
-        background-color: blue;
+   .wrapper-about, .wrapper-faq, .wrapper-services{
+    padding: 50px 85px 0 60px;
+    }
+   
+    .wrapper-intro{
+        margin: 0 -20px;
     }
 
+   h1{
+       font-size: 34px;
+   }
+
+   .blink{
+       font-size: 30px;
+   }
+
+   .blink::after{
+       box-sizing: border-box;
+   }
+
+   .subheader{
+       font-size: 16px;
+       margin: 0 -20px;
+   }
+
     h3{
-        font-size: 50px;
+        font-size: 25px;
     }
 
     .about{
-        font-size: 40px;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+    .about:hover{
+        font-size: 20.8px;
+        font-weight: 400;
+        margin: 25px 0 -7px -12px;
+        transition: 1s;
+    }
+
+    .blue-p{
+        font-size: 22px;
     }
 
     li{
-        font-size: 33px;
+        font-size: 20px;
     }
 
     .button-email{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .envelope{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .button-reviews{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .plane{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .nav-li{
@@ -324,11 +356,23 @@ footer{
     }
 
     .icon{
-        margin: 0px 0px 20px 0px;
+        margin: 8px 0px 17px 0px;
     }
 
     .fas, .fab{
-        font-size: 35px;
+        font-size: 30px;
     }
 
+    .fas:hover, .fab:hover{
+        font-size: 30px;
+        color: #212F33;
+        margin: auto;
+    }
+
+    .copyright{
+        font-size: 15px;
+        margin: 20px 70px;
+    }
+
+   
 }
