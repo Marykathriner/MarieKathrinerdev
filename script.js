@@ -11,5 +11,3 @@ function typeWriter() {
 }
 
 document.addEventListener("DOMContentLoaded", typeWriter);
-
-$(element).removeClass('hover');
